@@ -1,0 +1,14 @@
+.text-block{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(53, 45, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
