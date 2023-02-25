@@ -14,6 +14,7 @@ function Tsks(props){
               <core.TableRow>
                 <core.TableCell>Note</core.TableCell>
                 <core.TableCell>Time</core.TableCell>
+                <core.TableCell>Delete</core.TableCell>
               </core.TableRow>
             </core.TableHead>
             <core.TableBody>
@@ -22,6 +23,7 @@ function Tsks(props){
                   <core.TableRow key={index}>
                     <core.TableCell>{note.task}</core.TableCell>
                     <core.TableCell>{note.time}</core.TableCell>
+                    <core.Button>Delete</core.Button>
                   </core.TableRow>
                 );
               })}
