@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import './App.css';
 import Tsks from './Components/Tasks';
-import Note from './Components/Note';
 const core = require("@mui/material")
 
 function App() {

@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css"
-import Note from "./Note";
 const core = require("@mui/material")
 
 function Tsks(props){
