@@ -1,13 +1,17 @@
 import React from "react";
-import "../App.css"
+const core = require("@mui/material")
 
 function Note(props){
     return(
-    <div>
-        <div className="text-block">
-            <h1>Hello</h1>
+        <div>
+            <core.TableBody>
+                <core.TableRow>
+                    <core.TableCell>{props.task}</core.TableCell>
+                    <core.TableCell>{props.time}</core.TableCell>
+                </core.TableRow>
+            </core.TableBody>
         </div>
-    </div>)
+    )
 }
 
 export default Note;

@@ -1,14 +1,20 @@
 import React,{useState} from 'react'
 import './App.css';
+import Tsks from './Components/Tasks';
 import Note from './Components/Note';
+const core = require("@mui/material")
 
 function App() {
-
-  let tasks = []
+  const [notes, setNotes] = useState([
+    { task: 'Hello World', time: '12:00' },
+    { task: 'Hi', time: '13:00' },
+  ]);
 
   return (
     <div className="App">
-      <Note/>
+      <core.TextField variant="outlined" label="Note" type="text" />
+      <core.Button variant="outlined">Add Note</core.Button>
+      <Tsks notes={notes} />
     </div>
   );
 }
